@@ -16,9 +16,9 @@ mkdir ~/ffmpeg_sources
 
 # install Yasm
 cd ~/ffmpeg_sources
-curl -O http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz
-tar xzvf yasm-1.2.0.tar.gz
-cd yasm-1.2.0
+curl -O http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+tar xzvf yasm-1.3.0.tar.gz
+cd yasm-1.3.0
 ./configure --prefix="$HOME/ffmpeg_build" --bindir="$HOME/bin"
 make
 make install
@@ -56,9 +56,9 @@ make distclean
 
 # install libopus
 cd ~/ffmpeg_sources
-curl -O http://downloads.xiph.org/releases/opus/opus-1.0.3.tar.gz
-tar xzvf opus-1.0.3.tar.gz
-cd opus-1.0.3
+curl -O http://downloads.xiph.org/releases/opus/opus-1.0.9.tar.gz
+tar xzvf opus-1.0.9.tar.gz
+cd opus-1.0.9
 ./configure --prefix="$HOME/ffmpeg_build" --disable-shared
 make
 make install
@@ -66,9 +66,9 @@ make distclean
 
 # install libogg
 cd ~/ffmpeg_sources
-curl -O http://downloads.xiph.org/releases/ogg/libogg-1.3.1.tar.gz
-tar xzvf libogg-1.3.1.tar.gz
-cd libogg-1.3.1
+curl -O http://downloads.xiph.org/releases/ogg/libogg-1.3.2.tar.gz
+tar xzvf libogg-1.3.2.tar.gz
+cd libogg-1.3.2
 ./configure --prefix="$HOME/ffmpeg_build" --disable-shared
 make
 make install
@@ -76,9 +76,9 @@ make distclean
 
 # install libvorbis
 cd ~/ffmpeg_sources
-curl -O http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.3.tar.gz
-tar xzvf libvorbis-1.3.3.tar.gz
-cd libvorbis-1.3.3
+curl -O http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.5.tar.gz
+tar xzvf libvorbis-1.3.5.tar.gz
+cd libvorbis-1.3.5
 ./configure --prefix="$HOME/ffmpeg_build" --with-ogg="$HOME/ffmpeg_build" --disable-shared
 make
 make install
